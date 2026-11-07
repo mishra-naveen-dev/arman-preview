@@ -84,10 +84,6 @@ document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&
 if(!h||h.charAt(0)==='#'||a.hasAttribute('download')||a.target==='_blank')return;if(/^(mailto|tel|javascript):/i.test(h))return;
 if((h.indexOf('http:')===0||h.indexOf('https:')===0)&&h.indexOf(location.origin)!==0)return;e.preventDefault();e.stopImmediatePropagation();location.href=h;},true);
 addEventListener('popstate',function(){location.reload();});
-addEventListener('load',function(){setTimeout(function(){if(document.getElementById('preview-review-banner'))return;var d=document.createElement('div');d.id='preview-review-banner';
-d.setAttribute('style','position:relative;z-index:50;background:#b51a03;color:#fff;padding:10px 16px;text-align:center;font:13px/1.4 system-ui,-apple-system,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.25)');
-d.innerHTML='Design preview for internal review. Not the official Arman Financial Services website. <a href="https://armanindia.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;margin-left:8px;font-weight:600">Visit armanindia.com &rarr;</a>';
-document.body.insertBefore(d,document.body.firstChild);},0);});
 })();</script></head>
 <body>
   <div class="card">
